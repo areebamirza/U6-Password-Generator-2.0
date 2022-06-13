@@ -250,19 +250,20 @@ class Main {
     menu(lower, upper, mixed, mixedNum, allChars);
 
     System.out.println("\nDo you wish to continue? Enter y to generate new passwords or n to exit\n");
-
+    
     Scanner cont = new Scanner(System.in);
     String enter = cont.nextLine();
 
     if(enter.equals("y"))
     {
       menu(lower, upper, mixed, mixedNum, allChars);
-      System.out.println("\nGoodbye!");
     }
     else if(enter.equals("n"))
     {
-      System.out.println("\nGoodbye!");
+      System.out.println("\nExiting...");
     }
+
+    System.out.println("\nGoodbye!");
 
 
     /*
